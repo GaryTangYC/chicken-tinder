@@ -32,11 +32,15 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
+    }),
     new ReactRefreshWebpackPlugin({
       overlay: {
         sockIntegration: 'whm',
       },
     }),
+
     new HtmlWebpackPlugin({
       // trying to stringify code for loading code debugging
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
