@@ -75,7 +75,7 @@ const PartnerChoice = ({ partner, setPartner, setAppState }) => {
 const Map = ({ coordinates, setCoordinates }) => {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: apiKey,
     libraries,
   });
   const [autocomplete, setAutocomplete] = useState(null);
