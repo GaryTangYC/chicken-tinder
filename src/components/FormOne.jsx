@@ -171,7 +171,7 @@ const FormOne = ({ setFormOneParams, setFormState }) => {
     <div>
       <Card className="frosted-card">
         <Radius setRadius={setRadius} radius={radius} />
-        {/* <Map coordinates={coordinates} setCoordinates={setCoordinates} /> */}
+        <Map coordinates={coordinates} setCoordinates={setCoordinates} />
       </Card>
       <Box className="center-box">
         <Button className="wide-button" variant="contained" onClick={handleClick}>Next</Button>
