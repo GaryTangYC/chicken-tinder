@@ -16,11 +16,11 @@
 
 <div id="about">
  <h2> About the Project </h2>
-Choices, choices and more choices!
-
-<br>
+Choices, choices and more choices!  
+ <br>
+ <br>
 With the varieties of restaurants and cuisines out there, eating out with someone else can be the biggest headache in the world leading to unnecessary arguments and wastage of time.
-
+<br>
 <br>
 Chicken Tinder helps two people make a unanimous decision in deciding where to eat via a fun and playful way - removing conflicts and minimising the paradox of choices
 
