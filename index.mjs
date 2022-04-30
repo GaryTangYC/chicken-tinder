@@ -2,7 +2,7 @@ import cookieParser from 'cookie-parser';
 import express from 'express';
 import methodOverride from 'method-override';
 import bindRoutes from './routes.mjs';
-import dotenv from 'dotenv'; 
+import dotenv from 'dotenv';
 
 // Start dotenv.config to access environmental variales (NOTE! **SET UP YOUR OWN .env FILE!**   &&    REMEMBER TO .gitignore your .env file )
 dotenv.config();
@@ -35,7 +35,7 @@ if (env === 'development') {
   // destructure the default import and name the variable
   // see more here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#importing_defaults
   const { default: webpack } = await import('webpack')
-  const { default: webpackDevMiddleware } =  await import('webpack-dev-middleware');
+  const { default: webpackDevMiddleware } = await import('webpack-dev-middleware');
   const { default: webpackHotMiddleware } = await import('webpack-hot-middleware');
   const { default: webpackConfig } = await import('./webpack_conf/webpack.dev.js');
 
@@ -56,6 +56,7 @@ if (env === 'development') {
 // Bind route definitions to the Express application
 bindRoutes(app);
 
+console.log('process.env', process.env.PG_DIALECT)
 
 // Set Express to listen on the given port
 const PORT = process.env.PORT || 3004;
